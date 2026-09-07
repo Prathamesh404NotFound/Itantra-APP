@@ -1,0 +1,6 @@
+{
+  "name": "iTantra",
+  "description": "Offline-first multilingual voice communication system for Android",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Responsive Mobile-First Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Mobile Hamburger Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="Home">BrandName</a>
+      
+      <!-- Accessible Mobile Navigation Toggle -->
+      <button 
+        class="nav-toggle" 
+        id="navToggle" 
+        aria-expanded="false" 
+        aria-controls="primaryNav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#contact" class="nav-link cta-link">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="site-main" id="main-content" role="main">
+    <div class="container layout-wrapper">
+      
+      <!-- Primary Content Area -->
+      <article class="primary-content">
+        <h1>Adaptive &amp; Responsive Layout</h1>
+        <p class="lead-text">
+          Fluid typography and container-driven grids ensure flawless scaling from 320px compact screens to 4K desktop displays.
+        </p>
+
+        <!-- Responsive Card Grid (auto-fits dynamically from 320px up) -->
+        <section class="card-grid" aria-label="Feature list">
+          <div class="card">
+            <div class="media-container">
+              <svg class="placeholder-svg" viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect width="100%" height="100%" fill="#2563eb" opacity="0.12"/>
+                <circle cx="300" cy="170" r="60" fill="#2563eb" opacity="0.25"/>
+                <text x="50%" y="52%" text-anchor="middle" fill="#2563eb" font-family="sans-serif" font-weight="600" font-size="20">Fluid Layout Engine</text>
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>Fluid Typography</h3>
+              <p>Uses CSS <code>clamp()</code> to scale headings smoothly between mobile and desktop viewport widths without layout breaks.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="media-container">
+              <svg class="placeholder-svg" viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect width="100%" height="100%" fill="#059669" opacity="0.12"/>
+                <circle cx="300" cy="170" r="60" fill="#059669" opacity="0.25"/>
+                <text x="50%" y="52%" text-anchor="middle" fill="#059669" font-family="sans-serif" font-weight="600" font-size="20">Touch Optimizations</text>
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>Touch-Optimized</h3>
+              <p>Ensures touch targets exceed 48px &times; 48px to meet WCAG AA and Google mobile accessibility standards.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="media-container">
+              <svg class="placeholder-svg" viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect width="100%" height="100%" fill="#7c3aed" opacity="0.12"/>
+                <circle cx="300" cy="170" r="60" fill="#7c3aed" opacity="0.25"/>
+                <text x="50%" y="52%" text-anchor="middle" fill="#7c3aed" font-family="sans-serif" font-weight="600" font-size="20">Zero Horizontal Overflow</text>
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>No Horizontal Overflow</h3>
+              <p>Strict boundary containment guarantees zero horizontal scrolling on compact screens down to 320px width.</p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="site-sidebar" role="complementary" aria-label="Secondary information">
+        <div class="sidebar-card">
+          <h4>Quick Details</h4>
+          <p>This sidebar stacks seamlessly beneath the content on smaller viewports and snaps into a dedicated 2-column sidebar layout on desktop (1024px+).</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

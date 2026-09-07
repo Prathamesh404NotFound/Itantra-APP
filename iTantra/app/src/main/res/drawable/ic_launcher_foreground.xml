@@ -1,0 +1,92 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Center Node / Mic & Antenna Emblem within 66dp safe zone (21dp to 87dp) -->
+    
+    <!-- Outer wave left -->
+    <path
+        android:strokeColor="#00F5D4"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M34,42 C29,48 29,60 34,66" />
+        
+    <!-- Outer wave right -->
+    <path
+        android:strokeColor="#00F5D4"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M74,42 C79,48 79,60 74,66" />
+
+    <!-- Mid wave left -->
+    <path
+        android:strokeColor="#00D2FF"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M40,46 C37,51 37,57 40,62" />
+
+    <!-- Mid wave right -->
+    <path
+        android:strokeColor="#00D2FF"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M68,46 C71,51 71,57 68,62" />
+
+    <!-- Antenna beacon broadcast rays on top -->
+    <path
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M47,32 C51,29 57,29 61,32" />
+    <path
+        android:strokeColor="#00F5D4"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M42,27 C50,22 58,22 66,27" />
+
+    <!-- Central Transmitter Body -->
+    <path
+        android:fillColor="#00D2FF"
+        android:pathData="M48,40 C48,36.7 50.7,34 54,34 C57.3,34 60,36.7 60,40 L60,56 C60,59.3 57.3,62 54,62 C50.7,62 48,59.3 48,56 Z" />
+    
+    <!-- Central Soundwave bars inside mic body -->
+    <path
+        android:strokeColor="#070D1E"
+        android:strokeWidth="2.0"
+        android:strokeLineCap="round"
+        android:pathData="M52,44 L56,44" />
+    <path
+        android:strokeColor="#070D1E"
+        android:strokeWidth="2.0"
+        android:strokeLineCap="round"
+        android:pathData="M51,48 L57,48" />
+    <path
+        android:strokeColor="#070D1E"
+        android:strokeWidth="2.0"
+        android:strokeLineCap="round"
+        android:pathData="M52,52 L56,52" />
+
+    <!-- Central Mic Cradle / Wireless Stand -->
+    <path
+        android:strokeColor="#F8FAFC"
+        android:strokeWidth="3.0"
+        android:strokeLineCap="round"
+        android:pathData="M45,52 C45,61 63,61 63,52" />
+    <path
+        android:strokeColor="#F8FAFC"
+        android:strokeWidth="3.0"
+        android:strokeLineCap="round"
+        android:pathData="M54,62 L54,72" />
+    <path
+        android:strokeColor="#F8FAFC"
+        android:strokeWidth="3.0"
+        android:strokeLineCap="round"
+        android:pathData="M46,72 L62,72" />
+
+    <!-- Pulse indicator dot -->
+    <path
+        android:fillColor="#00F5D4"
+        android:pathData="M54,23m-2.5,0a2.5,2.5 0 1,0 5,0a2.5,2.5 0 1,0 -5,0" />
+</vector>
